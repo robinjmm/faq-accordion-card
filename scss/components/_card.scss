@@ -12,15 +12,14 @@
     position: relative;
 
     &__image {
-        position: absolute;
-        width: 80%;
-        left: 10%;
-        top: -21%;
+        margin-inline: auto;
+        width: 90%;
+        margin-top: rem(-145px);
     }
 
     &__shadow {
         width: 90%;
-        margin-top: -10px;
+        margin-top: rem(-80px);
         margin-inline: auto;
     }
 
@@ -47,5 +46,10 @@
             color: var(--text-accent);
             cursor: pointer;
         }
+    }
+
+    &__text {
+        margin-top: 1em;
+        transition: color 0.3s ease-in;
     }
 }

@@ -26,3 +26,10 @@ main {
     justify-content: space-between;
     gap: rem(30px);
 }
+
+.active,
+.active:active,
+.active:focus {
+    color: var(--text-color);
+    font-weight: var(--fw-bold);
+}
