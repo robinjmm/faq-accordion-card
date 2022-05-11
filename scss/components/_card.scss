@@ -1,0 +1,51 @@
+@use "../base/variables" as *;
+
+.card {
+    width: 95%;
+    max-width: 350px;
+    background-color: var(--bg-card);
+    margin: 0 auto;
+    margin-top: 15vh;
+    padding: rem(25px);
+    padding-bottom: rem(60px);
+    border-radius: rem(25px);
+    position: relative;
+
+    &__image {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: -21%;
+    }
+
+    &__shadow {
+        width: 90%;
+        margin-top: -10px;
+        margin-inline: auto;
+    }
+
+    &__heading {
+        font-size: rem(35px);
+        text-align: center;
+        color: var(--heading-color);
+        padding: em(25px, 35px) 0;
+    }
+
+    &__group {
+        border-bottom: 1px solid var(--divider-color);
+        padding: rem(20px) 0;
+    }
+
+    &__question {
+        color: var(--text-color);
+        position: relative;
+        font-weight: var(--fw-normal);
+        align-self: flex-start;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            color: var(--text-accent);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+@media (orientation: landscape) {
+    .card {
+        margin-top: 30vh;
+    }
+}

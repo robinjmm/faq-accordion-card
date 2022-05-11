@@ -1,0 +1,32 @@
+:root {
+    // Colors
+    --text-color: hsl(237, 12%, 33%);
+    --text-color-light: hsl(240, 6%, 50%);
+    --heading-color: hsl(238, 29%, 16%);
+    --text-accent: hsl(14, 88%, 65%);
+
+    --bg-gradient-1: hsl(273, 75%, 66%);
+    --bg-gradient-2: hsl(240, 73%, 65%);
+    --bg-card: hsl(0, 0%, 100%);
+
+    --divider-color: hsl(240, 5%, 91%);
+
+    // Fonts
+    --ff-primary: 'Kumbh Sans', sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+// Functions
+@function rem($value) {
+    $remValue: calc(($value / 1rem) * 1rem);
+    @return $remValue;
+}
+
+
+// $value is the desired size
+// $base is font-size of the parent
+@function em($value, $base) {
+    $emValue: calc(($value / $base) * 1em);
+    @return $emValue;
+}

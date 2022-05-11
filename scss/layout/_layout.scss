@@ -1,0 +1,28 @@
+@use '../base/variables' as *;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(70px) 0;
+    font-size: rem(12px);
+    width: 100%;
+    font-family: var(--ff-primary);
+    color: var(--text-color-light);
+    background: linear-gradient(var(--bg-gradient-1), var(--bg-gradient-2));
+}
+
+main {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(30px);
+}
