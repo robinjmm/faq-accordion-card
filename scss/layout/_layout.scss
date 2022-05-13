@@ -16,15 +16,26 @@ main {
     width: 100%;
 }
 
-.hidden {
-    display: none;
-}
-
 .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: rem(30px);
+}
+
+
+.hidden {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.appear {
+    transform: translateY(1rem);
+    margin-bottom: 1rem;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
 }
 
 .active,

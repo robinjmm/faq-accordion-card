@@ -48,8 +48,11 @@
         }
     }
 
+    &__arrow {
+        transition: all 0.2s ease-in;
+    }
+
     &__text {
-        margin-top: 1em;
-        transition: color 0.3s ease-in;
+        transition: all 0.2s ease-in;
     }
 }
