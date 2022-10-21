@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A challenge to build an interactive FAQ accordion component from Frontendmentor.io",
   "main": "index.js",
-  "source": "index.html",
+  "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
