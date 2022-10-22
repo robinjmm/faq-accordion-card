@@ -3,49 +3,32 @@
 .card {
     width: 95%;
     max-width: 350px;
+    height: 540px;
+    max-height: 540px;
     background-color: var(--bg-card);
-    margin: 0 auto;
-    margin-top: 15vh;
-    padding: rem(25px);
-    padding-bottom: rem(60px);
-    border-radius: rem(25px);
+    padding: 0 toRem(25px) toRem(60px);
+    border-radius: toRem(25px);
     position: relative;
 
-    &__image {
-        margin-inline: auto;
-        width: 90%;
-        margin-top: rem(-145px);
-    }
-
-    &__shadow {
-        width: 90%;
-        margin-top: rem(-80px);
-        margin-inline: auto;
-    }
-
     &__heading {
-        font-size: rem(35px);
+        font-size: toRem(35px);
         text-align: center;
         color: var(--heading-color);
-        padding: em(25px, 35px) 0;
+        padding: toEm(20px, 35px) 0 toEm(10px, 35px);
     }
 
     &__group {
         border-bottom: 1px solid var(--divider-color);
-        padding: rem(20px) 0;
+        padding: toRem(15px) 0;
     }
 
-    &__question {
-        color: var(--text-color);
-        position: relative;
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: toRem(14px);
         font-weight: var(--fw-normal);
-        align-self: flex-start;
-        transition: color 0.3s ease-in;
-
-        &:hover {
-            color: var(--text-accent);
-            cursor: pointer;
-        }
+        color: var(--text-color);
     }
 
     &__arrow {
@@ -53,6 +36,24 @@
     }
 
     &__text {
-        transition: all 0.2s ease-in;
+        padding-top: toRem(5px);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
+}
+
+// Utility class for expanding hidden text
+.expand {
+    max-height: 100px;
+}
+
+// Utility class for rotating the arrows
+.rotate {
+    transform: rotate(180deg);
+}
+
+// Utitility class for making question bold when clicked
+.bold {
+    font-weight: var(--fw-bold);
 }

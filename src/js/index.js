@@ -1,22 +1,28 @@
-const faq = document.querySelector(".card__faq");
+const label = document.querySelectorAll(".card__label");
 
+label.forEach((label) => {
+    label.addEventListener("click", toggleItem);
+});
 
+function toggleItem() {
+    let currentElement = this.nextElementSibling;
+    let isExpanded = currentElement.classList.contains("expand");
+    let arrow = this.firstElementChild.firstElementChild;
 
-faq.addEventListener("click", function (event) {
-    let question = event.target;
+    label.forEach(label => {
+        let content = label.nextElementSibling;
+        let arrow = label.firstElementChild.firstElementChild;
 
-    if (event.target.nodeName === "H3") {
+        if (content.classList.contains("expand")) {
+            content.classList.remove("expand");
+            arrow.classList.remove("rotate");
+            label.classList.remove("bold");
+        }
+    });
 
-        question.classList.toggle("active");
-
-        // target the hidden text below the question
-        let text = event.target.parentElement.nextElementSibling;
-        text.classList.toggle("hidden");
-        text.classList.toggle("appear");
-
-
-        // target the arrow icons and flip them upside down
-        let arrow = question.nextElementSibling;
-        arrow.classList.toggle("rotate-180");
+    if (!(isExpanded)) {
+        currentElement.classList.add("expand");
+        arrow.classList.add("rotate");
+        this.classList.add("bold");
     }
-})
+}
