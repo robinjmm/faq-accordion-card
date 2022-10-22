@@ -11,6 +11,7 @@
     padding: 0 toRem(25px) toRem(60px);
     border-radius: toRem(25px);
     position: relative;
+    box-shadow: 3px 36px 15px -14px rgba(0,0,0,0.15);
 
     &__image {
         width: 240px;

@@ -11,6 +11,7 @@
         z-index: 1;
         margin-top: 0;
         max-width: 920px;
+        max-height: 500px;
         display: flex;
         padding: 0;
 
@@ -35,14 +36,14 @@
             width: auto;
             max-width: max-content;
             position: absolute;
-            left: -550px;
-            top: 40%;
+            left: -570px;
+            top: 38%;
             transform: translateY(-50%);
         }
 
         &__box {
             position: absolute;
-            top: 235px;
+            top: 208px;
             left: -91px;
             z-index: 5;
         }
@@ -56,6 +57,7 @@
 
         &__heading {
             text-align: left;
+            padding-top: 0;
         }
 
         &__label:hover {
