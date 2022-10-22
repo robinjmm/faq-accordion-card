@@ -3,12 +3,31 @@
 .card {
     width: 95%;
     max-width: 350px;
-    height: 540px;
-    max-height: 540px;
+    height: 550px;
+    max-height: 550px;
+    margin-top: toRem(80px);
     background-color: var(--bg-card);
     padding: 0 toRem(25px) toRem(60px);
     border-radius: toRem(25px);
     position: relative;
+
+    .card__image, {
+        width: 240px;
+        position: absolute;
+        top: toRem(-110px);
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .card__shadow {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .card__content {
+        margin-top: toRem(100px);
+    }
 
     &__heading {
         font-size: toRem(35px);
@@ -29,6 +48,7 @@
         font-size: toRem(14px);
         font-weight: var(--fw-normal);
         color: var(--text-color);
+        cursor: pointer;
     }
 
     &__arrow {
