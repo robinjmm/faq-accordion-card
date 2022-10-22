@@ -2,8 +2,8 @@
   "name": "faq-accordion-card",
   "version": "1.0.0",
   "description": "My solution for the FAQ Accordion Card component challenge from Frontendmentor.io",
-  "main": "index.js",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
@@ -22,6 +22,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
   }
