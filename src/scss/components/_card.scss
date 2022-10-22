@@ -3,15 +3,16 @@
 .card {
     width: 95%;
     max-width: 350px;
-    height: 550px;
-    max-height: 550px;
+    height: 560px;
+    max-height: 560px;
     margin-top: toRem(80px);
     background-color: var(--bg-card);
+    background-repeat: no-repeat;
     padding: 0 toRem(25px) toRem(60px);
     border-radius: toRem(25px);
     position: relative;
 
-    .card__image, {
+    &__image {
         width: 240px;
         position: absolute;
         top: toRem(-110px);
@@ -19,13 +20,13 @@
         transform: translate(-50%, 0);
     }
 
-    .card__shadow {
+    &__shadow {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
     }
 
-    .card__content {
+    &__content {
         margin-top: toRem(100px);
     }
 

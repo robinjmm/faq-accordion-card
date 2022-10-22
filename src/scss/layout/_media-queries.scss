@@ -1,66 +1,65 @@
 @use "../base/variables" as *;
 
-@media (orientation: landscape) {
-    .card {
-        margin-top: 30vh;
+@media (max-width: 1279px) {
+    .card__box {
+        display: none;
     }
 }
 
-@media (min-width: 1440px) {
-    main {
-        position: relative;
-
-        &::before {
-//            content: url("../../images/illustration-box-desktop.svg");
-            position: absolute;
-            top: 60%;
-            transform: translateY(-50%);
-            left: 200px;
-            z-index: 1000;
-        }
-    }
-
+@media (min-width: 1280px) {
     .card {
+        z-index: 1;
         margin-top: 0;
         max-width: 920px;
-        position: relative;
-        overflow: hidden;
         display: flex;
-        padding: toRem(70px) toRem(90px) toRem(90px);
+        padding: 0;
 
-
-
-        &__heading {
-            text-align: left;
-            padding: 0
+        &__images {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
         }
 
         &__image {
-            z-index: 2;
-            margin: 0;
-            position: absolute;
-            width: 50%;
+            max-width: max-content;
+            z-index: 3;
+            width: auto;
             left: -80px;
             top: 50%;
             transform: translateY(-50%);
         }
 
         &__shadow {
-            z-index: 1;
+            z-index: 2;
             margin: 0;
-            width: 100%;
+            width: auto;
+            max-width: max-content;
             position: absolute;
             left: -550px;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
         }
 
-        &__images {
-            width: 50%;
+        &__box {
+            position: absolute;
+            top: 235px;
+            left: -91px;
+            z-index: 5;
         }
 
         &__content {
             width: 50%;
+            margin-top: toRem(60px);
+            padding-right: toRem(90px);
+            padding-left: toRem(20px);
+        }
+
+        &__heading {
+            text-align: left;
+        }
+
+        &__label:hover {
+            color: var(--text-accent);
         }
     }
 }
