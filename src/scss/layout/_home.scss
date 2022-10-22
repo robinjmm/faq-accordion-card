@@ -2,6 +2,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: toRem(70px) 0;
@@ -16,4 +17,5 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: toRem(60px);
 }
