@@ -6,7 +6,7 @@
 - [Site Preview](https://robinjmm-faq.vercel.app/)
 
 ## About
-This is my solution for the FAQ Accordion Card component challenge from [Frontendmentor.io](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
+This is my solution for the **FAQ Accordion Card** component challenge from [Frontendmentor.io](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
 ## User Stories
 The user should be able to:
