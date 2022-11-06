@@ -64,18 +64,3 @@
         transition: max-height 0.5s;
     }
 }
-
-// Utility class for expanding hidden text
-.expand {
-    max-height: 100px;
-}
-
-// Utility class for rotating the arrows
-.rotate {
-    transform: rotate(180deg);
-}
-
-// Utitility class for making question bold when clicked
-.bold {
-    font-weight: var(--fw-bold);
-}

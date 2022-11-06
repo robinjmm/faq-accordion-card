@@ -1,0 +1,18 @@
+@use "../base/variables" as *;
+
+/*! purgecss start ignore */
+// Utility class for expanding hidden text
+.expand {
+    max-height: 100px;
+}
+
+// Utility class for rotating the arrows
+.rotate {
+    transform: rotate(180deg);
+}
+
+// Utitility class for making question bold when clicked
+.bold {
+    font-weight: var(--fw-bold);
+}
+/*! purgecss end ignore */
